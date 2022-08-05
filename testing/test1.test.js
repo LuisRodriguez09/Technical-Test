@@ -1,5 +1,9 @@
 import { studentsInstance } from "../test1";
 
+// NOTE: To the cases approved and not approved, i contemplated that the smaller number
+// to qualify
+
+
 test("Testing approved students", () => {
   expect(studentsInstance.getApproved([7, 4, 6, 7, 4, 8, 9, 10])).toEqual(
     expect.arrayContaining([7, 7, 8, 9, 10])

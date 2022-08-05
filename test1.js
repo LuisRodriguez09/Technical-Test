@@ -1,6 +1,3 @@
-// Este arreglo contiene calificaciones de diferentes alumnos
-const list = [7, 4, 6, 7, 4, 8, 9, 10];
-
 class Grades {
   getApproved(noteList) {
     const studentGrades = noteList;
@@ -35,15 +32,6 @@ class Grades {
   }
 }
 
-export const studentsInstance = new Grades(list);
+export const studentsInstance = new Grades();
 
-// Desarrolla una clase que contenga un método para emitir cada uno de los siguientes resultados:
-// cuántos alumnos aprobaron
-// cuántos alumnos reprobaron
-// el promedio del grupo
-// la calificación más alta del grupo
-// la calificación más baja del grupo
-
-// Para cada método realiza pruebas unitarias con al menos 4 casos de prueba, utiliza mi arreglo como una de las entradas en cada uno
-
-// Entregar proyeto en GitHub, GitLab o BitBucket usando npm o deno
+console.log(studentsInstance.getApproved([1, 2, 3, 4, 5, 6]));
